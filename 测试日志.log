@@ -1,0 +1,10 @@
+2026-10-29 20:00:01 INFO  application started
+2026-10-29 20:00:12 INFO  connecting to database
+2026-10-29 20:00:13 ERROR Failed to connect to database: connection refused on 127.0.0.1:5432
+2026-10-29 20:00:14 Traceback (most recent call last):
+  File "app.py", line 42, in connect
+    conn = psycopg2.connect(dsn)
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: Connection refused
+2026-10-29 20:00:20 ERROR Unhandled exception in request handler
+Exception: 'NoneType' object has no attribute 'id'
+2026-10-29 20:00:21 INFO  retrying...
